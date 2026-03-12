@@ -6,7 +6,9 @@ app = FastAPI()
 
 class User(BaseModel):     
     name: str  
-    age: int
+    password: str
+    bio: str | None = None
+
         
 users = []
 
@@ -15,10 +17,30 @@ async def root():
     with open("Exercicios.html") as f:
         return f.read()
 
+@app.get("/signup", response_class=HTMLResponse)
+async def root():
+    with open("aula5.html") as f:
+        return f.read()
+
+@app.get("/login", response_class=HTMLResponse)
+async def root():
+    with open("view_aula5.html") as f:
+        return f.read()
+
+@app.post("/login")
+async def login(user : User):
+
+    u = next((u for u in users if u.name == user.name), None)
+
+    if (u.password == user.password):
+         return {"nome": u.name, "bio": u.bio}
+
 
 @app.post("/users/")
 async def create_user(user : User):
     users.append(user)
+
+    return {"usuario": user.name}
 
 
 @app.get("/users/")
@@ -30,7 +52,7 @@ async def get_user(index : int | None = None):
 
 @app.delete ("/users/")
 async def delete():
-    users = []
+    users.clear()
 
     return
 
