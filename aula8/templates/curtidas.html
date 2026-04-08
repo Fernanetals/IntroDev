@@ -1,0 +1,16 @@
+<h2>Curtidas</h2>
+
+<p>Total de curtidas: {{ curtidas }}</p>
+
+<button 
+    hx-post="/curtir"
+    hx-target="main">
+    Curtir!
+</button>
+
+<button 
+    hx-post="/reset"
+    hx-target="main"
+    hx-confirm="Tem certeza que deseja apagar as curtidas?">
+    Resetar
+</button>

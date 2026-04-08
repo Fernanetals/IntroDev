@@ -1,0 +1,140 @@
+.jupiter-body {
+    background-image: url("https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/02/USP.png?w=1200&h=900&crop=1");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.jupiter-main button:hover {
+    background-color:#ccddff;
+}
+
+.jupiter-main input:hover{
+    background-color: #ccddff;
+}
+
+.jupiter-main .buttons{
+    display: flex;
+    flex-direction: row;
+}
+
+@media (orientation: landscape){
+    .jupiter-main {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        flex-direction: column;
+        gap: 5vh;
+        background-color: white;
+        height: 70vh;
+        width: 30vw;
+        border: solid black 5px;
+        border-radius: 10px;
+    }
+
+    .jupiter-main input {
+        height: 5vh;
+        border-radius: 10px;
+        width: 15vw;
+        font-size: 2vh;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border: solid black 2px;
+    }
+
+    .jupiter-main button {
+        height: 5vh;
+        width: 8vw;
+        margin-bottom: 5vh;
+        border: solid black 2px;
+    }
+}
+
+@media (orientation: portrait){
+    .jupiter-main {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 3vh;
+        background-color: white;
+        height: 70vh;
+        width: 60vw;
+        border: solid black 5px;
+        border-radius: 10px;
+    }
+
+    .jupiter-main input {
+        height: 5vh;
+        border-radius: 10px;
+        width: 40vw;
+        font-size: 2vh;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border: solid black 2px;
+    }
+
+    .jupiter-main button {
+        height: 5vh;
+        width: 35vw;
+        margin-bottom: 5vh;
+        border: solid black 2px;
+    }
+}
+
+
+.jupiter-main form {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.jupiter-main img {
+    width: 20vw;
+}
+
+
+.professor {
+    background-color: #334;
+    font-family: serif;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #eaeaea
+}
+
+.professor h1 {
+    margin-bottom: 5px;
+    font-size: 5vw;
+}
+
+.professor p {
+    font-size: 1.5vw;
+}
+
+.professor hr {
+    margin: 20px 0;
+}
+
+.professor ul {
+    margin-left: 20px;
+}
+
+.professor address {
+    font-style: normal;
+}
+
+.professor a {
+    color: cyan;
+}
+
+.professor .last-modified {
+    font-size: 0.9em;
+    color: #eaeaea;
+}

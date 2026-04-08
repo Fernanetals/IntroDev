@@ -1,0 +1,116 @@
+html{
+    display: flex;
+    flex-direction: column;
+
+}
+
+body {
+    background-image: url("https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/02/USP.png?w=1200&h=900&crop=1");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+.header{
+    display: flex;
+    justify-content: right;
+    width: 100vw;
+    height: 100%;
+    flex-direction: row;
+    background-color: aliceblue;
+
+}
+
+button:hover {
+    background-color:#ccddff;
+}
+
+input:hover{
+    background-color: #ccddff;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+}
+
+@media (orientation: landscape){
+    .main {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        flex-direction: column;
+        gap: 5vh;
+        background-color: white;
+        height: 70vh;
+        width: 30vw;
+        border: solid black 5px;
+        border-radius: 10px;
+    }
+
+    input {
+        height: 5vh;
+        border-radius: 10px;
+        width: 15vw;
+        font-size: 2vh;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border: solid black 2px;
+    }
+
+    button {
+        height: 5vh;
+        width: 8vw;
+        margin-bottom: 5vh;
+        border: solid black 2px;
+    }
+}
+
+@media (orientation: portrait){
+    .main {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 3vh;
+        background-color: white;
+        height: 70vh;
+        width: 60vw;
+        border: solid black 5px;
+        border-radius: 10px;
+    }
+
+    input {
+        height: 5vh;
+        border-radius: 10px;
+        width: 40vw;
+        font-size: 2vh;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border: solid black 2px;
+    }
+
+    button {
+        height: 5vh;
+        width: 35vw;
+        margin-bottom: 5vh;
+        border: solid black 2px;
+    }
+}
+
+
+form {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+img {
+    width: 20vw;
+}

@@ -1,0 +1,39 @@
+.professor {
+    background-color: #334;
+    font-family: serif;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #eaeaea
+}
+
+.professor h1 {
+    margin-bottom: 5px;
+    font-size: 5vw;
+}
+
+.professor p {
+    font-size: 1.5vw;
+}
+
+.professor hr {
+    margin: 20px 0;
+}
+
+.professor ul {
+    margin-left: 20px;
+}
+
+.professor address {
+    font-style: normal;
+}
+
+.professor a {
+    color: cyan;
+}
+
+.professor .last-modified {
+    font-size: 0.9em;
+    color: #eaeaea;
+}

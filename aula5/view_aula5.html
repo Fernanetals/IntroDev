@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 5</title>
+</head>
+<body>
+    <form>
+        <input id="input-name">
+        <input id="input-password" type="password">
+        <button type="button" onclick="enviar()">Criar</button>
+    </form>
+
+    <h1 id="h1-name">
+    </h1>
+
+    <h1 id="h1-bio">
+    </h1>
+
+    <script>
+        async function enviar(){
+            const dados = {
+                "name": document.getElementById("input-name").value,
+                "password": document.getElementById("input-password").value
+            }
+
+            const response = await fetch("/login", {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(dados)
+            })
+
+            data = await response.json()
+
+            if (response.ok){
+                document.getElementById("h1-name").innerText = data.nome
+                document.getElementById("h1-bio").innerText = data.bio
+            }
+
+        }
+    </script>
+</body>
+</html>
